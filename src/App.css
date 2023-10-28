@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,48 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+li:nth-child(even){
+  background-color: rgba(128, 128, 128, 0.496);
+}
+
+
+textarea {
+  width: 70%;
+  height: 180px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 20px;
+  resize: none;
+}
+
+form {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 20px;
+  resize: none;
+}
+
+
+.App {
+  background-color: rgba(182, 182, 182, 0.194);
+}
+
+#starDiv {
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+#reviews-section {
+  padding-left: 1rem;
+  margin-top: 1rem;
 }
