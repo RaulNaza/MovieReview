@@ -1,6 +1,6 @@
 import './App.css';
 import MovieList from './components/MovieList';
-import professionalPhoto from '../public/images/Professional Photo.jpeg'
+import professionalPhoto from '../src/images/Professional Photo.jpeg'
 
 function App() {
   return (
