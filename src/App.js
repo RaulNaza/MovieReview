@@ -1,6 +1,6 @@
 import './App.css';
 import MovieList from './components/MovieList';
-
+import professionalPhoto from '../public/images/Professional Photo.jpeg'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <footer>
         <div className="footer-container">
           <img
-            src="images/Professional Photo.jpeg"
+            src={professionalPhoto}
             alt='portrait of Raul Nazario'
             className="footer-icon">
           </img>
