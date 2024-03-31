@@ -1,82 +1,187 @@
-/* .App {
-  text-align: center;
+.outer-card-container {
+  background-color: rgb(224, 224, 224);
+  border: 1px solid rgb(199, 198, 198);
+  border-radius: 25px;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.review-list {
+  border-radius: 25px;
+  padding: 5px;
+  height: 420px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inner-card-container {
+  border-bottom: 1px solid rgb(199, 198, 198);
+  padding: 10px;
+  height: 420px;
+  display: flex;
+  flex-direction: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  padding: 0 5px 0 0;
+}
+
+.card-body {
+  padding: 0 0 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 17px;
+  text-wrap: wrap;
+  word-break: normal;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.review-list-inner-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 80%;
+}
+
+.star-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+}
+
+.star-container>p {
+  font-size: 22px;
+}
+
+.star-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.star i {
+  color: #fcd34d;
+  font-size: 30px;
+}
+
+.star i:hover {
+  color: rgba(0, 0, 0, 0.526);
+  font-size: 35px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-top {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.review-top>p {
+  font-size: 20px;
+  margin: 2px 0;
+  text-align: center;
+}
+
+.review-top>textarea {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+  outline: none;
+  padding: 2px;
+  font-size: 15px;
+  resize: none;
+}
+
+.review-bottom {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 50%;
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+  box-shadow: 1px 1px 5px 1px grey;
+}
+
+.review-bottom>p {
+  font-size: 20px;
+  margin: 2px 0;
+  text-align: center;
+}
+
+.review-user-line {
+  font-style: italic;
+}
+
+.review-user-line i {
+  font-size: large;
+  margin-left: 5px;
+}
+
+.review-user-line .comment {
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.review-form {
+  align-content: center;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.review-form .form-data .form-label {
+  margin: 0 4px;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-li:nth-child(even){
-  background-color: rgba(128, 128, 128, 0.496);
+.review-form .form-data .form-control {
+  margin: 0 2px;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 3px;
 }
 
+.review-form .form-button {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 
-textarea {
-  width: 70%;
-  height: 180px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  font-size: 20px;
-  resize: none;
+  margin: 0 6px;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
-form {
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  font-size: 20px;
-  resize: none;
-}
-
-
-.App {
-  background-color: rgba(182, 182, 182, 0.194);
-}
-
-#starDiv {
-  margin: auto;
-  margin-top: 1rem;
-  width: 50%;
-  height: 5rem;
-  background-color: rgba(0, 0, 0, 0.025);
-}
-
-#reviews-section {
-  padding-left: 1rem;
-  margin-top: 1rem;
+.review-form .form-button:hover {
+  transform: scale(1.1);
+  margin: 0 1.2em;
+  background-color: black;
+  color: whitesmoke;
 }

@@ -18,10 +18,8 @@ export default class ReviewList extends React.Component {
     }
 
     render () {
-        // const {StarRating} =this.state;
-
         return (
-            <div className="mb-3">
+            <div className="review-list-inner-container">
                     <Stars movieIndex={this.props.index} callback={this.handlecallback}/>
                     <Review movieIndex={this.props.index} StarRating={this.state.StarRating}/>
             </div>
